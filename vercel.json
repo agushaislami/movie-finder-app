@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/github",
+      "destination": "https://github.com/agushaislami/movie-finder-app",
+      "permanent": true
+    }
+  ]
+}
