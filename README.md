@@ -1,16 +1,49 @@
-# React + Vite
+# 🎬 MovieFinder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, fast, and responsive web application for searching movies, viewing detailed information, and managing your personal favorite collection. Built with React, Vite, Tailwind CSS, and Zustand.
 
-Currently, two official plugins are available:
+![MovieFinder Demo](https://placehold.co/1200x600/0f172a/6366f1?text=MovieFinder+App+Screenshot)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+- **Vercel:** [https://movie-finder-app.vercel.app](https://movie-finder-app.vercel.app) *(Ganti dengan link Vercel milikmu)*
+- **Netlify:** [https://movie-finder-app.netlify.app](https://movie-finder-app.netlify.app) *(Ganti dengan link Netlify milikmu)*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- 🔍 **Real-time Live Search:** Instant movie search powered by OMDb API.
+- ⚡ **Debounced API Requests:** Integrated custom `useDebounce` hook to reduce unnecessary network traffic while typing.
+- 💖 **Favorites System:** Save or remove favorite movies easily with a single click.
+- 💾 **Persistent Storage:** Favorite list automatically syncs with browser `localStorage` using Zustand Persist middleware.
+- 📱 **Fully Responsive UI:** Dark-themed, modern interface built with Tailwind CSS.
+- 🖼️ **Fallback Handling:** Smart error handling for broken image links and missing poster assets.
+- 🍿 **Detailed Movie Modal:** View full plot summary, ratings, genre, actors, and release details.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** React (Vite)
+- **Styling:** Tailwind CSS
+- **State Management:** Zustand (with Persist Middleware)
+- **API:** [OMDb API](https://www.omdbapi.com/)
+- **Deployment:** Vercel & Netlify
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally on your machine.
+
+### Prerequisites
+
+Make sure you have Node.js installed and get a free API Key from [OMDb API](https://www.omdbapi.com/apikey.aspx).
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/agushaislami/movie-finder-app.git](https://github.com/agushaislami/movie-finder-app.git)
+   cd movie-finder-app
