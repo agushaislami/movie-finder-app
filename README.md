@@ -2,12 +2,10 @@
 
 A modern, fast, and responsive web application for searching movies, viewing detailed information, and managing your personal favorite collection. Built with React, Vite, Tailwind CSS, and Zustand.
 
-![MovieFinder Demo](https://placehold.co/1200x600/0f172a/6366f1?text=MovieFinder+App+Screenshot)
-
 ## 🌐 Live Demo
 
-- **Vercel:** [https://movie-finder-app.vercel.app](https://movie-finder-app.vercel.app) *(Ganti dengan link Vercel milikmu)*
-- **Netlify:** [https://movie-finder-app.netlify.app](https://movie-finder-app.netlify.app) *(Ganti dengan link Netlify milikmu)*
+- **Vercel:** [https://movie-finder-app.vercel.app](https://movie-finder-app.vercel.app)
+- **Netlify:** [https://movie-finder-app.netlify.app](https://movie-finder-app.netlify.app)
 
 ---
 
@@ -28,7 +26,7 @@ A modern, fast, and responsive web application for searching movies, viewing det
 - **Framework:** React (Vite)
 - **Styling:** Tailwind CSS
 - **State Management:** Zustand (with Persist Middleware)
-- **API:** [OMDb API](https://www.omdbapi.com/)
+- **API:** OMDb API
 - **Deployment:** Vercel & Netlify
 
 ---
@@ -39,11 +37,40 @@ Follow these steps to run the project locally on your machine.
 
 ### Prerequisites
 
-Make sure you have Node.js installed and get a free API Key from [OMDb API](https://www.omdbapi.com/apikey.aspx).
+Make sure you have Node.js installed and get a free API Key from OMDb API.
 
 ### Installation
 
 1. **Clone the repository:**
-   ```bash
    git clone [https://github.com/agushaislami/movie-finder-app.git](https://github.com/agushaislami/movie-finder-app.git)
    cd movie-finder-app
+
+2. **Install dependencies:**
+   npm install
+
+3. **Set up Environment Variables:**
+   Create a `.env` file in the root directory and add your OMDb API Key:
+   VITE_OMDB_API_KEY=your_omdb_api_key_here
+
+4. **Run the development server:**
+   npm run dev
+
+5. Open `http://localhost:5173` in your browser.
+
+---
+
+## 📂 Project Structure
+
+- `src/components/MovieCard.jsx` - Individual movie card component with favorite toggle
+- `src/components/MovieList.jsx` - Grid layout for rendering lists of movies
+- `src/components/MovieModal.jsx` - Modal popup for displaying full movie details
+- `src/components/Navbar.jsx` - Top navigation bar with search input and tab switching
+- `src/hooks/useDebounce.js` - Custom hook to debounce rapid inputs
+- `src/stores/useMovieStore.js` - Zustand global state store (favorites, modal, navigation)
+- `src/App.jsx` - Main application page logic
+
+---
+
+## 📄 License
+
+Distributed under the MIT License.
